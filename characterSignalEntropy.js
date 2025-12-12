@@ -4,7 +4,7 @@ function analyzeFluxEvents(transmission) {
     let count = 0;
 
     for (let ch of transmission) {
-        if (ch.charCodeAt(0) > 90) {  
+        if (ch.charCodeAt() > 90) {  
             count++;
         }
     }
