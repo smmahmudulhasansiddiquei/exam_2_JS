@@ -1,10 +1,10 @@
 const transmission = "a7XZtGeo9Bc";
 
-function analyzeFluxEvents(text) {
+function analyzeFluxEvents(transmission) {
     let count = 0;
 
-    for (let letter of text) {
-        if (letter > 'x') {
+    for (let ch of transmission) {
+        if (ch.charCodeAt(0) > 90) {  
             count++;
         }
     }
